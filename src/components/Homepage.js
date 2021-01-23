@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 
 const Homepage = () => {
 
-    const BASE_URL = '//www.ics.uci.edu/~dillenco/compsci161';
+    const BASE_URL = 'https://www.ics.uci.edu/~dillenco/compsci161';
 
     const onClick = (pageKey) => {
         switch (pageKey) {
@@ -29,7 +29,7 @@ const Homepage = () => {
                 break;
 
             case 'piazza':
-                document.getElementById('cs161').src = '//piazza.com/uc_irvine/winter2021/compsci161'
+                document.getElementById('cs161').src = 'https://piazza.com/uc_irvine/winter2021/compsci161'
                 break;
         }
     };

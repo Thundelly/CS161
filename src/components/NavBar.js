@@ -11,7 +11,7 @@ const NavBar = ({ onClick, ...props }) => {
                     <Nav.Item
                         icon={ <Icon icon="home" /> }
                         onClick={ () => onClick('home') }>Home</Nav.Item>
-                    <Dropdown title="Notes / Assignments">
+                    <Dropdown title="Notes / HW">
                         <Dropdown.Item
                             onClick={ () => onClick('notes-solutions') }>Notes / Solutions</Dropdown.Item>
                         <Dropdown.Item
