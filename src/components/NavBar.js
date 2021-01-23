@@ -10,23 +10,24 @@ const NavBar = ({ onClick, ...props }) => {
                 <Nav>
                     <Nav.Item
                         icon={ <Icon icon="home" /> }
-                        onClick={ () => onClick(1) }>Home</Nav.Item>
-                    <Dropdown title="Notes">
-                        <Dropdown.Item>Company</Dropdown.Item>
-                        <Dropdown.Item>Team</Dropdown.Item>
-                        <Dropdown.Item>Contact</Dropdown.Item>
-                    </Dropdown>
-                    <Dropdown title="About">
-                        <Dropdown.Item>Company</Dropdown.Item>
-                        <Dropdown.Item>Team</Dropdown.Item>
-                        <Dropdown.Item>Contact</Dropdown.Item>
+                        onClick={ () => onClick('home') }>Home</Nav.Item>
+                    <Dropdown title="Notes / Assignments">
+                        <Dropdown.Item
+                            onClick={ () => onClick('notes-solutions') }>Notes / Solutions</Dropdown.Item>
+                        <Dropdown.Item
+                            onClick={ () => onClick('assignments') }>Assignments</Dropdown.Item>
                     </Dropdown>
 
                     <Dropdown title="About Class">
-                        <Dropdown.Item>Class Schedule</Dropdown.Item>
-                        <Dropdown.Item>Grading</Dropdown.Item>
-                        <Dropdown.Item>Contact</Dropdown.Item>
+                        <Dropdown.Item
+                            onClick={ () => onClick('class-schedule') }>Class Schedule</Dropdown.Item>
+                        <Dropdown.Item
+                            onClick={ () => onClick('test-schedule') }>Test Schedule / Times</Dropdown.Item>
                     </Dropdown>
+
+                    <Nav.Item
+                        onClick={ () => onClick('piazza') }>Piazza</Nav.Item>
+
                 </Nav>
             </Navbar.Body>
         </Navbar>
