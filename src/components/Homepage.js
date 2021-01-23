@@ -16,7 +16,7 @@ const Homepage = () => {
                 document.getElementById('cs161').src = BASE_URL + '/notes/';
                 break;
 
-            case 'assignments':
+            case 'homework':
                 document.getElementById('cs161').src = BASE_URL + '/hw/';
                 break;
 

@@ -15,7 +15,7 @@ const NavBar = ({ onClick, ...props }) => {
                         <Dropdown.Item
                             onClick={ () => onClick('notes-solutions') }>Notes / Solutions</Dropdown.Item>
                         <Dropdown.Item
-                            onClick={ () => onClick('assignments') }>Assignments</Dropdown.Item>
+                            onClick={ () => onClick('homework') }>Homework</Dropdown.Item>
                     </Dropdown>
 
                     <Dropdown title="About Class">
