@@ -9,7 +9,7 @@
 
 ---
 
-I made this navigation bar implementation for those who that are frustrated with navigating the website. 
+I made this navigation bar implementation for those that are frustrated with navigating the website. 
 
 Hope this can help you easily find notes and homework. 
 
