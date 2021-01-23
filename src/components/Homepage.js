@@ -1,20 +1,35 @@
-import React, { useState } from 'react';
-import Iframe from 'react-iframe';
+import React from 'react';
 import NavBar from './NavBar';
 
 
-const Homepage = props => {
+const Homepage = () => {
+
+    const BASE_URL = '//www.ics.uci.edu/~dillenco/compsci161/';
+
+    const onClick = (pageKey) => {
+        switch (pageKey) {
+            case 1:
+                document.getElementById('cs161').src = BASE_URL;
+
+        }
+    };
+
     return (
         <div>
-            <NavBar />
-            <Iframe url='https://www.ics.uci.edu/~dillenco/compsci161/'
-                width='100%'
-                height='100%'
-                display="initial"
-                position="absolute"
+            <NavBar onClick={ onClick } />
+            <iframe
+                id='cs161'
+                title='cs161'
+                src={ BASE_URL }
+                frameBorder='0'
+                style={ {
+                    display: 'flex',
+                    width: '100vw',
+                    height: '100vh'
+                } }
             />
         </div>
     )
-}
+};
 
 export default Homepage;
