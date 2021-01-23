@@ -21,7 +21,7 @@ const Homepage = () => {
                 break;
 
             case 'class-schedule':
-                document.getElementById('cs161').src = BASE_URL + '/sched-w21.html/';
+                document.getElementById('cs161').src = BASE_URL + '/sched-w21.html';
                 break;
 
             case 'test-schedule':
