@@ -1,11 +1,11 @@
-# CS161-W2021 - Prof. Dillencourt
+# CS161-Web - Prof. Dillencourt
 ### One Sidebar >>> Million Hyperlinks
 
 ---
 
 ## Site Navigation Bar implementation on CS161 website
 
-* URL: https://cs161-w2021.netlify.app
+* URL: https://cs161.netlify.app
 
 ---
 
